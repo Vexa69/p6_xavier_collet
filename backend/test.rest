@@ -1,0 +1,42 @@
+GET http://localhost:3000/api/sauces
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MGUyZmU0ZDI5Y2U0YTBjNjBiNDY2ODAiLCJpYXQiOjE2MjU0ODkwMTEsImV4cCI6MTYyNTU3NTQxMX0.Y484z5T2W8Ev1olQ75lQVoipAJb2LZ2qD9HjqMaMVqs
+
+######
+POST http://localhost:3000/api/auth/login
+Content-Type: application/json
+
+{
+    "email": "daviddeux@gmail.com",
+    "password": "123456"
+}
+####
+PUT  http://localhost:3000/api/sauces/60e2fece29ce4a0c60b46688
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MGUyZmU0ZDI5Y2U0YTBjNjBiNDY2ODAiLCJpYXQiOjE2MjU0ODkwMTEsImV4cCI6MTYyNTU3NTQxMX0.Y484z5T2W8Ev1olQ75lQVoipAJb2LZ2qD9HjqMaMVqs
+Content-Type: application/json
+
+{
+  "name": "moutarde",
+   "userId": "60e2fe4d29ce4a0c60b46680"
+}
+
+
+#####
+
+DELETE  http://localhost:3000/api/sauces/60db18a50aa198632c8c6c8d
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MGRiMGI5YzRmYmMzZTQ1ZjAzYzEzNWUiLCJpYXQiOjE2MjU0NjkxMjIsImV4cCI6MTYyNTU1NTUyMn0.Tl-8Ba4gFWcH4lMI3dKhtOGpHlh5f7FFwKfcUMKVtCw
+
+Content-Type: application/json
+
+{
+  "userId": "60db0b9c4fbc3e45f03c135e",
+  "title": "image"
+
+}
+######
+POST http://localhost:3000/api/auth/login
+Content-Type: application/json
+
+{
+    "email": "davidquatre@gmail.com",
+    "password": "123456"
+}
