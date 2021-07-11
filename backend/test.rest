@@ -16,7 +16,7 @@ Content-Type: application/json
 
 {
   "name": "moutarde",
-   "userId": "60e2fe4d29ce4a0c60b46680"
+  "userId": "60e2fe4d29ce4a0c60b46680"
 }
 
 

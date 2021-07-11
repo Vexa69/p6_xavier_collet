@@ -2,11 +2,13 @@ const express = require("express");
 const bodyParser = require("body-parser");
 const mongoose = require("mongoose");
 const path = require("path");
+const helmet = require("helmet");
 
 const sauceRoutes = require("./routes/sauces");
 const userRoutes = require("./routes/user");
 
 //Pour créer une application express
+const app = express();
 
 require("dotenv").config();
 mongoose
@@ -17,7 +19,7 @@ mongoose
 	.then(() => console.log("Connexion à MongoDB réussie !"))
 	.catch(() => console.log("Connexion à MongoDB échouée !"));
 
-const app = express();
+app.use(helmet());
 
 // Système de sécurité CORS : Cross Origin Resource Sharing
 app.use((req, res, next) => {
