@@ -9,6 +9,8 @@ module.exports = (req, res, next) => {
 		if (req.body.userId && req.body.userId !== userId) {
 			throw "User ID non valable !";
 		} else {
+			req.token = token;
+			req.user = userId; // on ajoute l'id du user: cela servira à l'authentifiacation pour les routes delete et put
 			next();
 		}
 	} catch (error) {

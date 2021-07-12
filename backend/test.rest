@@ -11,7 +11,7 @@ Content-Type: application/json
 }
 ####
 PUT  http://localhost:3000/api/sauces/60e2fece29ce4a0c60b46688
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MGUyZmU0ZDI5Y2U0YTBjNjBiNDY2ODAiLCJpYXQiOjE2MjU0ODkwMTEsImV4cCI6MTYyNTU3NTQxMX0.Y484z5T2W8Ev1olQ75lQVoipAJb2LZ2qD9HjqMaMVqs
+Authorization:Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MGUyZmU0ZDI5Y2U0YTBjNjBiNDY2ODAiLCJpYXQiOjE2MjYwNzg0OTUsImV4cCI6MTYyNjE2NDg5NX0.RJzRZRqECpeurQYSB-1TKu-PrcS4v_Nv_FOLLXLRF-k
 Content-Type: application/json
 
 {
@@ -23,7 +23,7 @@ Content-Type: application/json
 #####
 
 DELETE  http://localhost:3000/api/sauces/60db18a50aa198632c8c6c8d
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MGRiMGI5YzRmYmMzZTQ1ZjAzYzEzNWUiLCJpYXQiOjE2MjU0NjkxMjIsImV4cCI6MTYyNTU1NTUyMn0.Tl-8Ba4gFWcH4lMI3dKhtOGpHlh5f7FFwKfcUMKVtCw
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MGUyZmU0ZDI5Y2U0YTBjNjBiNDY2ODAiLCJpYXQiOjE2MjYwNzg0OTUsImV4cCI6MTYyNjE2NDg5NX0.RJzRZRqECpeurQYSB-1TKu-PrcS4v_Nv_FOLLXLRF-k
 
 Content-Type: application/json
 
