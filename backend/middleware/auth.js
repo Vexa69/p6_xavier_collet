@@ -4,7 +4,7 @@ const jwt = require("jsonwebtoken");
 module.exports = (req, res, next) => {
 	try {
 		const token = req.headers.authorization.split(" ")[1];
-		const decodedToken = jwt.verify(token, "TcfHd7gepfYdù£sc8dqTcDF1dezfz1sq3P4dsaFD$cdzCsdsWO59dsdIcvfAg52RbHjZdgJLq3N4tnp9");
+		const decodedToken = jwt.verify(token, process.env.DB_TOKEN);
 		const userId = decodedToken.userId;
 		if (req.body.userId && req.body.userId !== userId) {
 			throw "User ID non valable !";

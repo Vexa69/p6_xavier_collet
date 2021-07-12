@@ -9,10 +9,9 @@ const userRoutes = require("./routes/user");
 
 //Pour créer une application express
 const app = express();
-
 require("dotenv").config();
 mongoose
-	.connect("mongodb+srv://vexa69:V21e09x19a83@cluster0.nmpux.mongodb.net/myFirstDatabase?retryWrites=true&w=majority", {
+	.connect(process.env.DB_CONNECT, {
 		useNewUrlParser: true,
 		useUnifiedTopology: true
 	})

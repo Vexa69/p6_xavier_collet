@@ -31,11 +31,11 @@ exports.login = (req, res, next) => {
 				.compare(password, user.password)
 				.then(valid => {
 					if (!valid) {
-						return res.status(401).json({ error: "Mot de passe incorrect !" });
+						return res.status(404).json({ error: "Mot de passe incorrect !" });
 					}
 					res.status(200).json({
 						userId: user._id,
-						token: jwt.sign({ userId: user._id }, "TcfHd7gepfYdù£sc8dqTcDF1dezfz1sq3P4dsaFD$cdzCsdsWO59dsdIcvfAg52RbHjZdgJLq3N4tnp9", {
+						token: jwt.sign({ userId: user._id }, process.env.DB_TOKEN, {
 							expiresIn: "24h"
 						})
 					});
